@@ -9,7 +9,7 @@ var $username = "suchUser";
 var $password = "123456";
 $myusername=$_POST["myusername"];
 $mypassword=$_POST["mypassword"];
-if (($myusername==$username) and ($mypassword==$password))
+if (($myusername==$username) && ($mypassword==$password))
 {
     echo "Login successful!";
     setcookie("access_level","standarduser");
