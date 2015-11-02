@@ -12,8 +12,9 @@ $mypassword=$_POST["mypassword"];
 if (($myusername==$username) && ($mypassword==$password))
 {
     echo "Login successful!";
-    //setcookie("access_level","standarduser");
-    //http_redirect("homepage.php");
+    setcookie("access_level","standarduser");
+    header("Location: homepage.php");
+    exit();
 }
 else
 {
