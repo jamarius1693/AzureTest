@@ -5,10 +5,10 @@
  * Date: 02/11/2015
  * Time: 13:48
  */
-var $username = "suchUser";
-var $password = "123456";
-var $myusername=trim($_POST["myusername"]);
-var $mypassword=trim($_POST["mypassword"]);
+$username = "suchUser";
+$password = "123456";
+$myusername=$_POST["myusername"];
+$mypassword=$_POST["mypassword"];
 if (($myusername==$username) && ($mypassword==$password))
 {
     echo "Login successful!";

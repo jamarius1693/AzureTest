@@ -5,7 +5,7 @@
  * Date: 02/11/2015
  * Time: 14:00
  */
-var $access_level = $_COOKIE['access_level'];
+$access_level = $_COOKIE['access_level'];
 function displayAccessLevelInformation($access_level) {
 
     if ($access_level == "standarduser") {
