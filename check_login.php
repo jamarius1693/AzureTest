@@ -7,8 +7,8 @@
  */
 var $username = "suchUser";
 var $password = "123456";
-$myusername=trim($_POST["myusername"]);
-$mypassword=trim($_POST["mypassword"]);
+var $myusername=trim($_POST["myusername"]);
+var $mypassword=trim($_POST["mypassword"]);
 if (($myusername==$username) && ($mypassword==$password))
 {
     echo "Login successful!";
