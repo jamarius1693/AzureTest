@@ -13,7 +13,7 @@ if ($myusername==$username && $mypassword==$password)
 {
     echo "Login successful!";
     setcookie('access_level','standarduser');
-    http_redirect('homepage.php');
+    header("location:homepage.php");
 }
 else
 {
