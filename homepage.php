@@ -5,6 +5,7 @@
  * Date: 02/11/2015
  * Time: 14:00
  */
+echo "<p>hello</p>";
 $access_level = $_COOKIE['access_level'];
 function displayAccessLevelInformation($access_level) {
 

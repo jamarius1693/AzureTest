@@ -14,7 +14,7 @@ if (($myusername==$username) && ($mypassword==$password))
     echo "Login successful!";
     setcookie("access_level","standarduser");
     header("Location: homepage.php");
-    //exit();
+    exit();
 }
 else
 {
