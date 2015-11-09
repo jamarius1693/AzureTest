@@ -10,15 +10,15 @@ $db = new mysqli(
     "ba3185d0da41b9",
     "814afc85",
     "firsttry1693" );
-echo 'wololo2';
+echo 'wololo3';
 // test our connection
 if ($db->connect_errno) {
     die ('Connection Failed :'.$db->connect_error );
-    echo 'wololoERROR';
 }
 
 $topicID=5;
 $result = $db -> query("select topicName from topics where topicID=5");
 
-echo $result;
+echo $result->data_seek(0);
+echo 'after result';
 ?>
