@@ -18,8 +18,7 @@ if ($db->connect_errno) {
 }
 
 $topicID=5;
-$result =mysql_query('select topicName from topics where topicID=5');
-
+$result = $db -> query("select topicName from topics where topicID=5");
 
 echo $result;
 ?>
