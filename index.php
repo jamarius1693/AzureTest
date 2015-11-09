@@ -18,7 +18,7 @@ if ($db->connect_errno) {
 
 $topicID=5;
 $result = $db -> query("select topicName from topics where topicID=5");
-
-echo $result->data_seek(0);
+$res = $result->data_seek(0)->fetch_assoc();
+echo $res;
 echo 'after result';
 ?>
