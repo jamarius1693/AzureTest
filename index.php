@@ -17,5 +17,9 @@ if ($db->connect_errno) {
     echo 'wololoERROR';
 }
 
-echo $_GET['section'];
+$topicID=5;
+$result =mysql_query('select topicName from topics where topicID=5');
+
+
+echo $result;
 ?>
