@@ -18,5 +18,5 @@ if ($db->connect_errno) {
 }
 
 $section = $_GET['section'];
-echo $section;
+echo $_GET['section'];
 ?>
