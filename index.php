@@ -10,11 +10,11 @@ $db = new mysqli(
     "ba3185d0da41b9",
     "814afc85",
     "firsttry1693" );
-
+echo 'wololo';
 // test our connection
 if ($db->connect_errno) {
     die ('Connection Failed :'.$db->connect_error );
-    echo 'wololo';
+    echo 'wololoERROR';
 }
 
 $section = $_GET['section'];
